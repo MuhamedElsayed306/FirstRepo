@@ -1,0 +1,216 @@
+
+
+/*START HOME PAGE*/
+body
+{
+    overflow-x: hidden;
+}
+/*Start Navbar*/
+nav a
+{
+    text-transform: uppercase;
+}
+nav .active
+{
+    border-left:1px solid #777;
+}
+/*End Navbar*/
+
+/*Start Showcase*/
+section .carousel .image-1
+{
+    background-image: url('../images/image1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:450px
+}
+section .carousel .image-2
+{
+    background-image: url('../images/image2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:450px
+}
+section .carousel .image-3
+{
+    background-image: url('../images/image3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:450px
+}
+/*Start Showcase*/
+
+/*Start Fixed*/
+
+#fixed
+{
+    height:200px;
+    position: relative;
+    background-image: url('../images/lights.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color:white;
+}
+#fixed .overlay
+{
+    position: absolute;
+    top:0;
+    left:0;
+    background-color: rgba(0 ,0 ,0 ,0.6);
+    width:100%;
+    height:100%;
+} 
+
+/*End Fixed*/
+
+/*Start footer*/
+.footer
+{
+    background-color: black;
+}
+
+@media (min-width:1200px)
+{
+    input
+    {
+        width:100%
+    }
+}
+/*End footer*/
+
+/*End HOME PAGE*/
+
+/*START ABOUT PAGE*/
+/*START PAGE HEADER*/
+#header
+{
+    position: relative;
+    height:200px;
+    background-image: url('../images/image1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+header .overlay
+{
+    position: absolute;
+    top:0;
+    left:0;
+    background-color: rgba(0 ,0 ,0 ,0.6);
+    width:100%;
+    height:100%;
+}
+#about-body img
+{
+    margin-top:-30px
+}
+/*END PAGE HEADER*/
+/*END ABOUT PAGE*/
+
+/*Start Services Page*/
+
+/*Start Services Cards*/
+#services-cards .card-body .carrier
+{
+    border-radius: 10px;
+}
+#services-cards .card-body .carrier p
+{
+    border-bottom:1px solid #CCC;
+    padding-bottom: 15px;
+}
+#services-cards .card-body .carrier p:first-child
+{
+    padding-top: 15px;
+}
+#services-cards .card-body .carrier p:last-child
+{
+    border:none
+}
+
+@media (min-width:576px) and (max-width:768px)
+{  
+     .card-columns
+    {
+        display: flex;
+        flex-direction: column;
+    }
+}
+/*End services Cards*/
+
+/*End Services Page*/
+
+
+
+/*Start Blog Page*/
+
+/*Start Blog cards*/
+#blog-cards .second small
+{
+    font-size: 70%;
+}
+@media (min-width:576px) and (max-width:768px)
+{
+    .card-deck
+    {
+        display: flex;
+        flex-direction: column;
+    }
+}
+/*End Blog Cards*/
+
+/*End Blog Page*/
+
+/*Start Contact Page*/
+#forms .mail
+{
+    font-size: 0.9rem;
+}
+#forms form input
+{
+    width:49%
+}
+#forms form input:first-of-type
+{
+    margin-right: 2%;
+}
+#forms form input:nth-of-type(3)
+{
+    margin-right: 2%;   
+}
+
+@media (max-width:576px) 
+{
+    #forms form input
+    {
+        width:100%
+    }
+    #forms form input:first-of-type
+    {
+        margin-right: unset;
+    }
+    #forms form input:nth-of-type(3)
+    {
+        margin-right: unset;   
+    }
+    #forms .row .first
+    {
+        margin-bottom: 10px;
+    }
+}
+@media (min-width:576px) and (max-width:768px)
+{
+    #forms .row .first
+    {
+        margin-bottom: 10px;
+    }
+}
+/*End Contact Page*/
+
+/*Start Contact Pics*/
+#pics img
+{
+    border-radius: 50%;
+}
+/*End Contact Pics*/
